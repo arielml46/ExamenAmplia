@@ -5,6 +5,7 @@
  */
 package modelo;
 
+import controlador.Validador;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -29,7 +30,7 @@ public class Mac implements PC{
   private String name;
   Socket client;
   private static Scanner scanner = new Scanner(System.in); 
-
+private Validador v;
    
 
  public Mac(String Os, int port, String serverName) {
@@ -37,6 +38,7 @@ public class Mac implements PC{
     this.Os=Os;
     this.port = port;
     this.serverName = serverName;
+    this.v= v;
  }
 
     public int getPort() {
@@ -81,7 +83,8 @@ public class Mac implements PC{
         System.out.println("Digite la ip de su pc, tenga en cuenta que no sobrepasa el dígito 255");
       int select = Integer.parseInt(scanner.nextLine());
         if(select>255){
-            
+            //Ip=Integer.parseInt(select);
+            //getIp().v.path();
       System.out.println("La ip digitada no es correcta");
     }
     

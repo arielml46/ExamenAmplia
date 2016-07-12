@@ -21,8 +21,9 @@ public class Impresiones {
     
     public Impresiones()
     {
+        
         ser= new Servidor();
-        DecimalFormat formatea = new DecimalFormat("###,###.##");
+        DecimalFormat format = new DecimalFormat("###,###.##");
     }
 
     public Impresiones(Servidor ser, Windows w, Mac m, GNULinux g) {
@@ -35,13 +36,13 @@ public class Impresiones {
     public void representacionW(String ip)
             
     {
-        System.outprintln(formatea.format(ip));
+        System.outprintln(format.format(ip));
     }
     
     public void representacionG(String ip)
             
     {
-        System.outprintln(formatea.format(ip));
+        System.outprintln(format.format(ip));
     }
     
 
@@ -49,6 +50,7 @@ public class Impresiones {
     
     public String substring(int beginIndex, int endIndex, String Ip)
     {
-        System.out.println(w.getIp().substring(1,2,3,5,6,7,9,11));
+        System.out.println(w.getIp().substring.parseInt((1,2,3,5,6,7,9,11)));
    
     }
+}
