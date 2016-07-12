@@ -24,7 +24,7 @@ import java.util.Scanner;
  */
 public class Servidor {
     private ServerSocket serverSocket;
-    private int port;
+    private int port=10053;
     private boolean seguir;
     private static Scanner scanner = new Scanner(System.in); 
     private static int select = -1;

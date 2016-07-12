@@ -85,7 +85,7 @@ public class Windows implements PC{
       int select = Integer.parseInt(scanner.nextLine());
         if(select>255){
            // Ip=Integer.parseInt(select);
-            //getIp().v.path();
+            //getIp().v.math();
       System.out.println("La ip digitada no es correcta");
     }
     
